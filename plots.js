@@ -62,7 +62,7 @@ function buildMetadata(sample) {
 
       Plotly.newPlot("gauge",[gauge],layout);
     });
-  }
+  };
 
 function buildCharts(sample){
     d3.json("samples.json").then((data) => {
@@ -117,4 +117,8 @@ function buildCharts(sample){
       
 
     });
-}
+  };
+
+  window.onload = function() {
+    optionChanged("940");
+  };
